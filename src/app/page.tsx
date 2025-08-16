@@ -80,8 +80,8 @@ export default function Home() {
         >
           <div className="space-y-6">
             <h1 className="text-balance font-horizon text-3xl tracking-tight text-white sm:text-4xl">
-              FPV & Cinematic Drone flights by{" "}
-              <span className="text-[#9bb985]">Sudarshan K&nbsp;J</span>
+              I love you Divya{" "}
+              {/* <span className="text-[#9bb985]">Sudarshan K&nbsp;J</span> */}
             </h1>
             <p className="text-pretty font-sans text-base leading-relaxed text-neutral-300 sm:text-lg">
               We craft immersive aerial visuals with precision and restraint.
