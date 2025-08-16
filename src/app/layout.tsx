@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const horizon = localFont({
+  src: "./horizon.otf",
+  variable: "--font-horizon",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,9 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${horizon.variable} antialiased`}
       >
         {children}
       </body>
