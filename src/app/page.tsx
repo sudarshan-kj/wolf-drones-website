@@ -80,7 +80,7 @@ export default function Home() {
         >
           <div className="space-y-6">
             <h1 className="text-balance font-horizon text-3xl tracking-tight text-white sm:text-4xl">
-              FPV & Cinematic flights by{" "}
+              FPV & Cinematic Drone flights by{" "}
               <span className="text-[#9bb985]">Sudarshan K&nbsp;J</span>
             </h1>
             <p className="text-pretty font-sans text-base leading-relaxed text-neutral-300 sm:text-lg">
@@ -239,7 +239,7 @@ export default function Home() {
                 +91&nbsp;96866&nbsp;78&nbsp;568
               </a>
               <a
-                href="mailto:hello@wolfdrones.example"
+                href="mailto:sudarshan@wolfdrones.in"
                 className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-neutral-100 transition hover:bg-white/10"
               >
                 sudarshan@wolfdrones.in
