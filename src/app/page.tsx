@@ -8,7 +8,6 @@ const NAV = [
   { href: "#about", label: "About" },
   { href: "#gallery", label: "Gallery" },
   { href: "#training", label: "Training" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Home() {
