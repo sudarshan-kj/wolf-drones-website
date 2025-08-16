@@ -6,7 +6,8 @@ export default function Home() {
         96866-78-568 for bookings.
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        © 2025 Wolf Drones <br> FPV | Cinematic</br>
+        © 2025 Wolf Drones <br />
+        <p>FPV | Cinematic</p>
       </footer>
     </div>
   );
