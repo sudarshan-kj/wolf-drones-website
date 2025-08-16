@@ -8,7 +8,6 @@ const NAV = [
   { href: "#about", label: "About" },
   { href: "#gallery", label: "Gallery" },
   { href: "#training", label: "Training" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Home() {
@@ -68,15 +67,12 @@ export default function Home() {
         </div>
       </header>
 
-      {/* ---- Spacer to prevent header overlapping content ---- */}
-      <div className="h-24" aria-hidden />
-
       {/* Main */}
-      <main className="mx-auto max-w-6xl px-4 pb-24 pt-4 sm:px-6">
+      <main className="mx-auto max-w-6xl px-4 pb-24 pt-36 sm:px-6">
         {/* Hero */}
         <section
           id="hero"
-          className="grid items-center gap-10 md:grid-cols-2 scroll-mt-36"
+          className="grid items-center gap-10 md:grid-cols-2"
           data-fade
         >
           <div className="space-y-6">
@@ -122,12 +118,7 @@ export default function Home() {
         </section>
 
         {/* About */}
-        <section
-          id="about"
-          className="scroll-mt-36 mt-24 space-y-4"
-          data-ffade
-          data-fade
-        >
+        <section id="about" className="scroll-mt-28 mt-24 space-y-4" data-fade>
           <h2 className="font-horizon text-2xl text-white">About</h2>
           <p className="max-w-2xl text-pretty font-sans text-neutral-300">
             Wolf Drones specializes in high-performance FPV and elegant
@@ -141,71 +132,40 @@ export default function Home() {
         {/* Gallery */}
         <section
           id="gallery"
-          className="scroll-mt-36 mt-24"
+          className="scroll-mt-28 mt-24"
           aria-label="Gallery"
           data-fade
         >
           <h2 className="mb-6 font-horizon text-2xl text-white">Gallery</h2>
 
-          {/* Subsection: Gear */}
-          <div id="gear" className="mt-6">
-            <h3 className="mb-4 font-horizon text-xl text-white">Gear</h3>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {[
-                { src: "/images/all-gear.jpg", alt: "gear" },
-                { src: "/images/drones.jpg", alt: "drones" },
-                { src: "/images/sky.png", alt: "sky" },
-                { src: "/images/trees.jpg", alt: "trees" },
-              ].map((img) => (
-                <figure
-                  key={img.src}
-                  className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    width={1200}
-                    height={800}
-                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  />
-                </figure>
-              ))}
-            </div>
-          </div>
-
-          {/* Subsection: Aerial Shots */}
-          <div id="aerial-shots" className="mt-10">
-            <h3 className="mb-4 font-horizon text-xl text-white">
-              Aerial Shots
-            </h3>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {[
-                { src: "/images/all-gear.jpg", alt: "gear" },
-                { src: "/images/drones.jpg", alt: "drones" },
-                { src: "/images/sky.png", alt: "sky" },
-                { src: "/images/trees.jpg", alt: "trees" },
-              ].map((img) => (
-                <figure
-                  key={img.src}
-                  className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    width={1200}
-                    height={800}
-                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                  />
-                </figure>
-              ))}
-            </div>
+          {/* 2 columns × 2 rows = 4 images */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {[
+              { src: "/images/all-gear.jpg", alt: "gear" },
+              { src: "/images/drones.jpg", alt: "drones" },
+              { src: "/images/sky.png", alt: "sky" },
+              { src: "/images/trees.jpg", alt: "trees" },
+            ].map((img) => (
+              <figure
+                key={img.src}
+                className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={1200}
+                  height={800}
+                  className="h-64 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                />
+              </figure>
+            ))}
           </div>
         </section>
 
         {/* Training */}
         <section
           id="training"
-          className="scroll-mt-36 mt-24 space-y-4"
+          className="scroll-mt-28 mt-24 space-y-4"
           data-fade
         >
           <h2 className="font-horizon text-2xl text-white">Training</h2>
@@ -223,7 +183,7 @@ export default function Home() {
         {/* Contact */}
         <section
           id="contact"
-          className="scroll-mt-36 mt-24"
+          className="scroll-mt-28 mt-24"
           aria-label="Contact"
           data-fade
         >
@@ -243,7 +203,7 @@ export default function Home() {
                 href="mailto:hello@wolfdrones.example"
                 className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm text-neutral-100 transition hover:bg-white/10"
               >
-                sudarshan@wolfdrones.in
+                sudarshan@wolfdrones.example
               </a>
             </div>
           </div>
