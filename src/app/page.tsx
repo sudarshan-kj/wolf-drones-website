@@ -80,8 +80,8 @@ export default function Home() {
         >
           <div className="space-y-6">
             <h1 className="text-balance font-horizon text-3xl tracking-tight text-white sm:text-4xl">
-              I love you Divya{" "}
-              {/* <span className="text-[#9bb985]">Sudarshan K&nbsp;J</span> */}
+              FPV & Cinematic flights by{" "}
+              <span className="text-[#9bb985]">Sudarshan K&nbsp;J</span>
             </h1>
             <p className="text-pretty font-sans text-base leading-relaxed text-neutral-300 sm:text-lg">
               We craft immersive aerial visuals with precision and restraint.
@@ -109,7 +109,7 @@ export default function Home() {
             <div className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-[#9bb985]/10 blur-3xl" />
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
               <Image
-                src="/hero-placeholder.jpg"
+                src="/images/sudarshan.jpg"
                 alt="Aerial still"
                 width={1200}
                 height={800}
