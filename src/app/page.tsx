@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="relative min-h-dvh">
       {/* Header: translucent glass */}
-      <header className="fixed inset-x-0 top-0 z-50">
+      <header className="fixed inset-x-0 top-0 z-50 bg-black/40 backdrop-blur-md ">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="flex items-center justify-between px-4 py-3 sm:px-6">
@@ -34,14 +34,11 @@ export default function Home() {
                 <Image
                   src="/wolf-logo.png"
                   alt="Wolf Drones Logo"
-                  width={140}
-                  height={30}
+                  width={150}
+                  height={150}
                   priority
                   className="h-auto w-[140px]"
                 />
-                <span className="hidden font-horizon text-sm tracking-wide text-[#9bb985] sm:inline">
-                  Wolf Drones
-                </span>
               </a>
 
               {/* Nav right */}
@@ -67,6 +64,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      {/* Spacer to prevent overlap */}
+      <div className="h-28" aria-hidden />
 
       {/* ---- Spacer to prevent header overlapping content ---- */}
       <div className="h-24" aria-hidden />
