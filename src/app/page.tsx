@@ -149,15 +149,15 @@ export default function Home() {
           {/* Subsection: Gear */}
           <div id="gear" className="mt-6">
             <h3 className="mb-4 font-horizon text-xl text-white">Gear</h3>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div className="grid grid-cols-2 gap-8   sm:grid-cols-2">
               {[
-                { src: "/images/all-gear.jpg", alt: "gear" },
-                { src: "/images/drones.jpg", alt: "drones" },
-                { src: "/images/sky.png", alt: "sky" },
-                { src: "/images/trees.jpg", alt: "trees" },
+                { src: "/images/drone4-1.png", alt: "drone1" },
+                { src: "/images/drone2-1.png", alt: "drone2" },
+                { src: "/images/drone3.png", alt: "drone3" },
+                { src: "/images/drone4.png", alt: "drone4" },
               ].map((img) => (
                 <figure
-                  key={img.src}
+                  key={img.alt}
                   className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                 >
                   <Image
@@ -165,7 +165,7 @@ export default function Home() {
                     alt={img.alt}
                     width={1200}
                     height={800}
-                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                    className="h-96 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                   />
                 </figure>
               ))}
@@ -179,13 +179,13 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[
-                { src: "/images/all-gear.jpg", alt: "gear" },
-                { src: "/images/drones.jpg", alt: "drones" },
-                { src: "/images/sky.png", alt: "sky" },
-                { src: "/images/trees.jpg", alt: "trees" },
+                { src: "/images/shot1.png", alt: "shot1" },
+                { src: "/images/shot2.jpg", alt: "shot2" },
+                { src: "/images/shot3.jpg", alt: "shot3" },
+                { src: "/images/shot1.png", alt: "shot4" },
               ].map((img) => (
                 <figure
-                  key={img.src}
+                  key={img.alt}
                   className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                 >
                   <Image
@@ -193,7 +193,7 @@ export default function Home() {
                     alt={img.alt}
                     width={1200}
                     height={800}
-                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                    className="h-128 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                   />
                 </figure>
               ))}
