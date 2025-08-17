@@ -182,7 +182,7 @@ export default function Home() {
                 { src: "/images/shot1.png", alt: "shot1" },
                 { src: "/images/shot2.jpg", alt: "shot2" },
                 { src: "/images/shot3.jpg", alt: "shot3" },
-                { src: "/images/shot1.png", alt: "shot4" },
+                { src: "/images/shot3.png", alt: "shot4" },
               ].map((img) => (
                 <figure
                   key={img.alt}
